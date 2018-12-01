@@ -1,0 +1,33 @@
+
+      use test
+      db.createUser({
+               user: "tracker",
+               pwd: "password",
+
+               roles: [
+                 { role: "dbAdmin", db: "admin" } ,"dbAdmin"
+               ],
+
+               mechanisms: [ "SCRAM-SHA-1","SCRAM-SHA-256" ],
+
+             })
+
+
+
+
+
+             ------------------------monitoring  base script----------------------------
+             <?php
+             function get($url){
+             		$contents= file_get_contents($url, true);
+             	if($contents){
+             		preg_match("/<title>(.*?)<\/title>/i",$contents,$matches);
+             		echo $matches[1];
+             	}
+             	else{
+             		echo 'error';
+             	}
+             }
+             get('http://goodsdasdsgle.co.in');
+             ?>
+            ----------------------------------------------------------------------

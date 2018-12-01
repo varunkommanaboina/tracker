@@ -1,0 +1,438 @@
+esxi collection
+{
+_id:
+cloud:
+serverName:
+_id.vmFunction:[4324sad52435,4324sad52435,4324sad52435]
+hardware:{ram:50GB,HDD:1000GB,processor:3cores}
+servicerReqNo:[]
+
+}
+
+
+$data =array(
+"cloud"=>"database",
+"serverName"=>"database",
+"serverIp"=>"10.32.32.4",
+"vms"=>array(4343243434,4234344324,42342344234,4324324);
+"hardware"=>(object)array(
+          "ram"=>"50",
+          "HDD"=>"1000",
+          "processor"=>"3cores"
+              ),
+"SrNo"=>array(23123,3123,3123,31233)
+
+);
+
+--------------------------------------------------------------------------------
+
+Vm collection
+{
+_id:4324sad52435
+VMFunction:Archives and Archaeology(e-teor)
+hostName:GSDCDEPTAPP02
+vHardware:{ram:value,HDD:value,processor:value}
+serverType:staging
+RDlogins:[{user_type:sdc/vendor,username:varun}],
+ips:{public:10.189.47.75,private:10.189.47.75,gateway:10.189.47.75}
+port:[{portNo:80,portName:http,reqBy:client,reason:test,timePeriod:1hr,securityThreat:sql injection,from:10.189.47.75,to:10.189.47.74}]
+internet:yes
+os:windows
+patches:[{pathDetails:text,date:12-07-1018,updatedBy:arjun,status:yes/no,comments:}]
+softwaresInstalled:[{name:wamp,licence:no,remarks:text},{name:sqlserver,licence:yes,remarks:text}]
+antiVirus:{antiVirus:type,licence:text,expiryDate:date()}
+storage:[{Backupdate:date(),sourcecodeDir:string,sourcecodeDirSize:1GB,backupTap:yes,backupToTapeOn:date(),backupToTapeby:string}]
+websites/apps:[32423rfwer4324,32423rfwer4324,32423rfwer4324,32423rfwer4324]
+servicerReqNo:[]
+visits:[]
+comments:[{commentby:varun,date:12-07-2018,comment:dsadas}]
+others:[{clone:yes,name:webserverclone2,date:12-3-2018},]
+
+}
+
+
+
+$data = array(
+  "VMFunction"=>"Archives and Archaeology(e-teor)",
+  "hostName"=>"GSDCDEPTAPP02",
+  "vHardware"=>(object)array(
+    "ram"=>"3GB",
+    "HDD"=>"200",
+    "processor"=>"value"),
+
+  "serverType"=>"staging",
+  "RDlogins"=>(object)array(
+          "usertype"=>"sdc",
+          "username"=>"varun",
+    ),
+  "ips"=>(object)array(
+    "public"=>"10.189.47.75",
+    "private"=>"10.189.47.75",
+    "gateway"=>"10.189.47.75"
+  ),
+  "port"=>(object)array(
+        (object)array(
+          "portNo"=>"80",
+          "portName"=>"http",
+          "reqBy"=>"client",
+          "reason"=>"test",
+          "timePeriod"=>"1hr",
+          "securityThreat"=>"sql injection",
+          "from"=>"10.189.47.75",
+          "to"=>"10.189.47.74"
+        ),
+        (object)array(
+          "portNo"=>"8080",
+          "portName"=>"http",
+          "reqBy"=>"client",
+          "reason"=>"test",
+          "timePeriod"=>"1hr",
+          "securityThreat"=>"sql injection",
+          "from"=>"10.189.47.75",
+          "to"=>"10.189.47.74"
+          )
+    ),
+  "internet"=>"yes",
+  "os"=>"windows 2012R2",
+  "patches"=>(object)array(
+    "patch"=>"patch id collection",
+    "date"=>"12-07-1018",
+    "updatedBy"=>"arjun",
+    "status"=>"yes",
+    "comments"=>"comments"
+  ),
+  "softwaresInstalled"=>(object)array(
+    array("name"=>"wamp","licence"=>"no","remarks"=>"text"),
+    array("name"=>"ms sql","licence"=>"yes","remarks"=>"text")
+  ),
+  "antiVirus"=>(object)array(
+    "antiVirus"=>"type",
+    "licence"=>"text",
+    "expiryDate"=>new MongoDate()
+  ),
+  "storage"=>(object)array(
+    "Backupdate"=>new MongoDate(),
+    "sourcecodeDir"=>"string",
+    "sourcecodeDirSize"=>"1GB",
+    "backupTap"=>"yes",
+    "backupToTapeOn"=>new MongoDate(),
+    "backupToTapeby"=>"text",
+    ),
+  "webapps"=>array("32423rfwer4324","32423rfwer4324","32423rfwer4324","32423rfwer4324"),
+  "servicerReqNo"=>array(434344,43243,4234,34324),
+  "visits"=>array(4324432432,4324234234,42342342343),
+  "comments"=>(object)array(
+    "commentby"=>"varun",
+    "date"=>new MongoDate(),
+    "comment"=>"dsadas"),
+  "clone"=>(object)array(
+    "name"=>"webserverclone2",
+    "date"=>new MongoDate()
+    )
+
+);
+
+--------------------------------------------------------------------------------
+
+web collection
+{
+_id:32423rfwer4324
+_id_VM:_id:4324sad52435
+hostingDetails:{hostingType:staging/production,hostedDate:date(),remark:text}
+type:website/webApplication
+appName:
+deptName:itisattari
+vendorDetails:{vendor:text,contactPerson:text,email:vendor@mail.com,contNo:4324324,Designation:Developer}
+VendorAccess:{VPN:id,RDP:id}
+url:http://dte.goa.gov.in/,
+auditCert:{status:no/yes,issuedate:date(),expdate;date(),path:soft copy path,remark:text}
+ssl:{status:yes/no,expiration:date}
+webServer:wamp
+databaseSoftware:mysql
+visits:[]
+servicerReqNo:[]
+securityAudit:{status:yes,validatedBy:String,Validity:date(),expiryDate:date(),remark:text}
+comments:[{commentby:varun,date:12-07-2018,comment:dsadas}]
+}
+
+
+
+		$data=array(
+		      "vm_id"=>"collection id",
+		      "hostingDetails"=>(object)array(
+		              "hostingType"=>"staging",
+		              "hostedDate"=>new MongoDate(),
+		              "remark"=>"remarks if any"
+		      ),
+		      "type"=>"web application",
+		      "appName"=>"name",
+		      "deptnmae"=>"itipanaji",
+		      "vendorDetails"=>(object)array(
+		              "vendor"=>"vendorName",
+		              "contactPerson"=>"text",
+		              "email"=>"email@email.com",
+		              "contactNo"=>"43243423432",
+		              "designation"=>"developer",
+								),
+		      "VPN"=>(object)array(
+		              "VPN"=>"VPN collection id",
+		              "RDP"=>"rdp collection id"
+		          ),
+		      "url"=>"http://wenbsite.com",
+		      "auditCert"=>(object)array(
+		              "status"=>"yes",
+		              "issuedate"=>new MongoDate(),
+		              "expdate"=>new MongoDate(),
+		              "path"=>"soft copy path",
+		              "remark"=>"text"
+		      ),
+		      "ssl"=>(object)array(
+		          "status"=>"yes",
+		          "expiration"=>new MongoDate()
+		        ),
+		      "webServer"=>"apache",
+		      "databaseSoftware"=>"mysql",
+		      "visits"=>array(213213,4324234,423423432),
+		      "servicerReqNo"=>array(34234423,4234,324,4324),
+		      "securityAudit"=>(object)array(
+					        "status"=>"yes",
+					        "validatedBy"=>"String",
+					        "Validity"=>new MongoDate(),
+					        "expiryDate"=>new MongoDate(),
+					        "remark"=>"text"
+		        ),
+		      "comments"=>(object)array(
+		          (object)array(
+		          "commentby"=>"varun",
+		          "date"=>new MongoDate(),
+		          "comment"=>"dsadas"
+		          ),(object)array(
+		          "commentby"=>"varun",
+		          "date"=>new MongoDate(),
+		          "comment"=>"dsadas"
+		          )
+		          )
+
+		);
+
+
+--------------------------------------------------------------------------------
+
+service req collection
+{
+_id:
+collection:add same no to collection servicerReqNo:[]
+requestRaisedBy:
+AssignedTo:
+Desscription:
+status:
+comments:[{commentby:varun,date:12-07-2018,comment:dsadas}]
+}
+
+
+$data =array(
+"collection"=>321312321,
+"requestRaisedBy"=>"varun",
+"AssignedTo"=>"arjun",
+"Desscription"=>"Desscription",
+"status"=>"underprocess",
+"comments"=>array(
+      (object)array(
+          "commentby"=>"varun",
+          "date"=>new MongoDate(),
+          "commbent"=>"comment text"
+      )
+    )
+);
+
+
+
+--------------------------------------------------------------------------------
+
+daily register collection
+{
+_id:
+date:date()
+Name:432432sadfdf32432432
+shift:
+Activities:[]
+comments:[{commentby:varun,date:12-07-2018,comment:dsadas}]
+}
+
+
+$doc = array(
+    "date"=>new MongoDate(),
+    "name"=>"varun",
+    "shift"=>1,
+    "Activities"=>array(
+    'dasdasda','asdasdasd','dasdasdasdas','adsdasdsa'
+    ),
+    "comments"=>(object)array(
+                              (object)array(
+                              "commentBy"=>"varun",
+                              "date"=>new MongoDate(),
+                              "comment"=>"sample comment"
+                              ),
+                              (object)array(
+                              "commentBy"=>"varun",
+                              "date"=>new MongoDate(),
+                              "comment"=>"sample comment 2"
+                              )
+                         )
+);
+
+--------------------------------------------------------------------------------
+visits collection
+{
+_id:
+date:date()
+from:time
+to:time
+VisitPurpose:
+dept : databases //will be assigned by helpdesk
+visitor:[{name:string,designation:string,department:string,mobileNo:value},{name:string,designation:string,department:string,mobileNo:value}]
+signature&date:
+ApproalByItg:{nameOfTheApproving:string,signature&date:string,Designation:string}
+DCO:{nameOfTheApproving:string,signature&date:string,Designation:string}
+comments:[{commentby:varun,date:12-07-2018,comment:dsadas}]
+}
+
+
+$doc = array(
+"date" =>new MongoDate(),
+"from" => new MongoDate(),
+"to" =>new MongoDate(),
+"VisitPurpose" => "updatation of website",
+"dept" => "database",
+"Visitors"=>(object)array(
+              (object)array(
+                "name"=>"varun",
+                "designation"=>"DBA",
+                "dept"=>"database",
+                "mobile"=>9292929292,
+              ),
+              (object)array(
+                "name"=>"dilip",
+                "designation"=>"sr eng",
+                "dept"=>"database",
+                "mobile"=>9292929292,
+              )
+            ),
+"signAnddate"=>"yes",
+"approvalByItg"=>(object)array(
+                "nameOfTheApproving"=>"name",
+                "signature&date"=>"yes",
+                "Designation"=>"manager",
+            ),
+"approvalByDCO"=>(object)array(
+                "nameOfTheApproving"=>"name",
+                "signature&date"=>"yes",
+                "Designation"=>"manager",
+              ),
+"comments"=>(object)array(
+                (object)array(
+                      "commentby"=>"varun",
+                      "date"=>new MongoDate(),
+                      "comment"=>"text"
+                ), (object)array(
+                       "commentby"=>"varun",
+                       "date"=>new MongoDate(),
+                       "comment"=>"text"
+                 )
+
+              )
+);
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+VPN collection
+{
+user_type:sdc/vendor       //drop down SDC/Vendor
+vendor name: itg
+username:43243sadas,
+password:343saar,
+comments:[
+            {
+            commentby: varun,
+            date:12-07-2018,
+            comment:dsadas
+            },
+            {
+            commentby: varun,
+            date:12-07-2018,
+            comment:dsadas
+            }
+      ]
+}
+
+
+
+$doc = array(
+"user_type"=>"vendor",
+"vendorNname"=> "itg",
+"username"=>"itg",
+"password"=>"343saar",
+"comments"=>array(
+          (object)array(
+            "commentby" =>" varun",
+            "date"=>"12-07-2018",
+            "comment"=>"dsadas"
+            ),
+            (object)array(
+            "commentby" =>" varun",
+            "date"=>"12-07-2018",
+            "comment"=>"dsadas"
+           )
+         )
+);
+
+--------------------------------------------------------------------------------
+employee collection
+{
+  name: {
+  first name:       varun,
+  last name:        kommanaboina
+  }
+  password:         password,
+  DOB:              30-july-1993,
+  empid:            87123,
+  date of joining:  8-dec-2017,
+  privilage level:  2,
+  dept:             database,
+  designation:      database administrator
+}
+
+
+$doc = array(
+  "name" => (object)array("fname" => "varun", "lname" => "kommanaboina"),
+  "password" =>"password",
+  "DOB"=>"30-july-1993",
+  "empid"=>87123,
+  "DOJ"=>"8-dec-2017",
+  "Plevel"=>2,
+  "dept"=>"database",
+  "designation"=>"database administrator"
+);
+
+--------------------------------------------------------------------------------
+
+patches collection
+
+{
+_id:4324d,
+patch:"type",
+patchName:"patchName",
+PatchDescription:"",
+}
+
+
+		$data = array(
+		  "patch"=>"security",
+		  "patchname"=>"name any",
+		  "date"=>new MongoDate(),
+		  "PatchDescription"=>"full desc"
+		);
