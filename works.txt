@@ -85,3 +85,35 @@ $this->mongo_db
 ->where('serverType', 'stagging')->pull(
     'port',array('portNo'=>'88432')
   )->update('test');
+  
+  
+ //////////////to find the document who is have value of object inside array 
+ $query = $this->mongo_db->get_where('VM', array('port.portNo' => '8083'));
+ [port] => Array
+                (
+                    [0] => Array
+                        (
+                            [portNo] => 8080
+                            [portName] => http
+                            [reqBy] => client
+                            [reason] => test
+                            [timePeriod] => 1hr
+                            [securityThreat] => sql injection
+                            [from] => 10.189.47.75
+                            [to] => 10.189.47.74
+                        )
+
+                    [1] => Array
+                        (
+                            [portNo] => 8083
+                            [portName] => http
+                            [reqBy] => client
+                            [reason] => test
+                            [timePeriod] => 1hr
+                            [securityThreat] => sql injection
+                            [from] => 10.189.47.75
+                            [to] => 10.189.47.74
+                        )
+
+                )
+
